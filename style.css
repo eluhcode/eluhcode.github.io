@@ -9,14 +9,14 @@
   --color-dark-charcoal: #333333;
   --color-dark-grayish: #3a3b3c;
 }
-
+/*
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-/*
+
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
