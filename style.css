@@ -32,6 +32,8 @@ body {
 /* topmenu section styles end here */
 
 /* navbar section styles start here */
+
+
 .navbar {
   margin-bottom: 0;
   background-color: var(--color-black);
@@ -53,6 +55,7 @@ body {
 .navbar-default .navbar-toggle {
   border-color: transparent;
   color: var(--color-white) !important;
+
 }
 /* navbar section styles end here */
 
@@ -106,7 +109,7 @@ body {
 /* Subject styles end here */
 
 /* Welcome section styles start here */
-.welcome {
+#welcome {
   position: relative;
   display: flex;
   height: 100vh;
@@ -115,7 +118,7 @@ body {
   justify-content: center;
   padding: 25px;
 }
-.welcome img {
+#welcome img {
   position: relative;
   display: flex;
   width: 95%;
@@ -123,31 +126,40 @@ body {
   justify-content: center;
 }
 
-.welcome .info {
+#welcome .info {
   width: 50%;
   text-align: center;
 }
-.welcome .info h3 {
+#welcome .info h3 {
   font-size: 40px;
   font-weight: 200;
   text-transform: uppercase;
   margin-bottom: .2em;
 }
-.welcome .info p {
+#welcome .info p {
   font-size: 2.2rem;
   color: var(--color-dark-grayish);
   font-weight: 300;
   margin-top: -.5em;
 }
 
-.welcome .animate-left {
+#welcome .underline {
+  width: 28rem;
+  height: 0.15rem;
+  background: var(--color-black);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+#welcome .animate-left {
   transition: width 2s, height 2s, transform 2s;
 }
-.welcome .animate-left:hover {
+#welcome .animate-left:hover {
   transform: rotate(360deg);
 }
 
-.welcome .animate-right:hover{
+#welcome .animate-right:hover{
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
 
@@ -178,7 +190,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-.banner {
+#about .banner {
   position: absolute;
   top: 35%;
   left: 0;
@@ -192,13 +204,13 @@ body {
   text-align: center;
   padding: 0px 100px;
 }
-.banner h3 {
+#about .banner h3 {
   font-size: 32px;
   font-weight: 200;
   color: var(--color-white);
   text-transform: uppercase;
 }
-.banner p {
+#about .banner p {
   font-size: 20px;
   font-weight: 200;
   color: var(--color-white);
@@ -210,7 +222,7 @@ body {
 
 
 /* Customers' reviews carousel styles start here*/
-.reviews {
+#reviews {
   width: 100%;
   height: 410px;
   margin-bottom: -2rem;
@@ -218,7 +230,7 @@ body {
   display: block;
   background-color: var(--color-black);
 }
-.carousel {
+#reviews .carousel {
   position: relative;
   text-align: center;
   height: 400px;
@@ -228,7 +240,7 @@ body {
   background-position: center;
   padding-top: 2.5rem;
 }
-.item p {
+#reviews .item p {
   font-size: 1.5em;
   color: var(--color-black);
   padding-left: 4rem;
@@ -250,13 +262,16 @@ body {
   text-align: center;
   background-color: var(--color-black);
 }
-.details-space {
+#contact .details-space {
   margin-top: 0rem;
 }
-.details-space h3 {
+#contact .details-space h3 {
+  font-size: 25px;
+  font-weight: 200;
   color: var(--color-white);
+  text-transform: uppercase;
 }
-.social {
+#contact .social {
   margin-top: 1rem;
   padding-right: 0.4rem;
 }
@@ -283,7 +298,7 @@ body {
 }
 /*  Top - Arrow up styles end here */
 
-/* -------------- footer start here ----------------------*/
+/*  footer start here */
 
 footer {
   color: var(--color-white);
@@ -306,29 +321,7 @@ footer .codedby {
   font-size: 0.8em; 
   color: var(--color-light-grey);
 }
-
-/* -------------- footer end here ----------------------*/
-
-
-/*=============================*/
-
-
-
-@media (max-width: 575px) {
-
-}
-
-@media (max-width: 575px) {
-
-}
-
-@media (max-width: 575px) {
-
-}
-
-@media (max-width: 575px) {
-
-}
+/* footer end here */
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>  Portfolio styles start here */
@@ -343,6 +336,10 @@ footer .codedby {
   width: 100%;
   z-index: -1;
 }
+#portfolio {
+  margin-top: 0px;
+}
+
 #portfolio .row {
   display: -ms-flexbox;
   display: flex;
@@ -445,7 +442,9 @@ footer .codedby {
 #portfolio .photo {
   object-fit: cover;
   height: 275px;
-  width: 400px;
+  /*width: 400px;*/
+  width: 100%;
+  height: auto;
 }
 #portfolio .item-info header {
   display: flex;
@@ -467,66 +466,175 @@ footer .codedby {
 
 /* >>>>>>>>>>>>>>>>>> RESPONSIVE STYLES <<<<<<<<<<<<<<<<<< */
 
+/*=============================*/
+
+
 /* Responsive styles start here */
 @media (max-width: 1100px) {
-  .portfolio .title {
+  #subject p{
+    color: red;
+  }
+  #portfolio .title {
     font-size: 2.5rem;
     color: red;
   }
 }
 
 @media (max-width: 991px) {
-  .portfolio .title {
-    font-size: 2.5rem;
+  #subject p{
+    color: purple;
+  }
+  #portfolio .title {
     color: purple;
   }
 }
 
 @media (max-width: 799px) {
-  .portfolio .title{
-    font-size: 2.5rem;
-    color:orangered;
+  #subject p{
+    color: orange;
   }
-  .filter-btn {
-    font-size: 1.2rem;
-    margin: 0 0.1rem;
-    padding: 1rem 1rem;
+  #portfolio .title{
+    color:orange;
   }
 }
 @media (max-width: 678px) {
-  .portfolio .title {
-    font-size: 2.5rem;
+  #subject p{
+    color: green;
+  }
+  #portfolio .title {
     color: green;
   }
 }
 
+
+
 @media (max-width: 550px) {
-  .portfolio .title {
-    font-size: 2.5rem;
+  #subject h1{
     color: yellow;
+    font-size: 75px;
+  }
+  #welcome .info h3 {
+    font-size: 30px;
+  }
+  #welcome .info p {
+    font-size: 2.0rem;
+  }
+  #welcome .underline {
+    width: 18rem;
+  }
+  #about .banner {
+    padding: 0px 25px;
+  }
+  #about .banner h3 {
+    font-size: 1.3em;
+  }
+  #about .banner p {
+    font-size: 1.0em;
+  }
+  #reviews .item p {
+    font-size: 1.0em;
+  }
+  #contact .details-space h3 {
+    font-size: 20px;
+  }
+
+  #portfolio .title {
+    font-size: 2.0rem;
+    color: yellow;
+  }
+  #portfolio .btn-area {
+    display: grid;
+    grid-gap: 4px;
+    justify-content: center;
+  }
+  #portfolio .filter-btn {
+    font-size: 1.2rem;
   }
 }
 
-@media (max-width: 411px) {
-  .portfolio .title{
+@media (max-width: 410px) {
+  #subject h1{
+    color: aquamarine;
+    font-size: 65px;
+  }
+  #welcome .info h3 {
+    font-size: 25px;
+  }
+  #welcome .info p {
     font-size: 1.8rem;
+  }
+  #welcome .underline {
+    width: 16rem;
+  }
+
+  #portfolio .title {
+    color: aquamarine;
+  }
+  #portfolio .portfolio-item {
+    padding: 5px 23px 5px 23px;
+    max-width: 398x;
+    width: 398px;
+  }
+ 
+  #portfolio .item-info header {
+    width: 380px;
+    width: 340px;
+  }
+  #portfolio .item-info h4 {
+    width: 168px;
+  }
+}
+
+@media (max-width: 300px) {
+  #subject h1{
+    color: blue;
+    font-size: 45px;
+  }
+  #subject p{
+    font-size: 22px;
+  }
+
+  #welcome .info h3 {
+    font-size: 20px;
+  }
+  #welcome .info p {
+    font-size: 1.6rem;
+  }
+  #welcome .underline {
+    width: 16rem;
+  }
+
+  #about .banner h3 {
+    font-size: 1.2em;
+  }
+  #about .banner p {
+    font-size: 0.8em;
+  }
+  #reviews .item p {
+    font-size: 0.8em;
+  }
+  #contact .details-space h3 {
+    font-size: 16px;
+  }
+
+  #portfolio .title {
     color: blue;
   }
-  .filter-btn {
-    font-size: 1.0rem;
-    padding: 0.5rem 0.5rem;
+  #portfolio .title {
+    font-size: 1.8rem;
   }
-  .photo {
-    height: 175px;
-    width: 260px;
+  #portfolio .portfolio-item {
+    padding: 5px 5px 5px 5px;
+    max-width: 275px;
+    width: 275px;
   }
-  .item-info header {
+  #portfolio .item-info header {
     width: 250px;
   }
-  .category-detail {
-    font-size: 1.25rem;
+  #portfolio .item-info h4 {
+    font-size: 1.3rem;
+    width: 138px;
   }
-  h4 {
-    font-size: 1.25rem;
-  } 
+  
 }
+
