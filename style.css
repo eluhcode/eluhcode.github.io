@@ -153,6 +153,7 @@ body {
 }
 
 #welcome .animate-left {
+  margin: auto;
   transition: width 2s, height 2s, transform 2s;
 }
 #welcome .animate-left:hover {
@@ -484,6 +485,7 @@ footer .codedby {
   #subject p{
     color: purple;
   }
+
   #portfolio .title {
     color: purple;
   }
@@ -501,9 +503,16 @@ footer .codedby {
   #subject p{
     color: green;
   }
+
+  #welcome {
+    display: grid;
+    justify-content: center;
+  }
+
   #portfolio .title {
     color: green;
   }
+
 }
 
 
@@ -512,6 +521,13 @@ footer .codedby {
   #subject h1{
     color: yellow;
     font-size: 75px;
+  }
+  #welcome {
+    display: grid;
+    justify-content: center;
+  }
+  #welcome .info {
+    margin: auto;
   }
   #welcome .info h3 {
     font-size: 30px;
@@ -601,7 +617,7 @@ footer .codedby {
     font-size: 1.6rem;
   }
   #welcome .underline {
-    width: 16rem;
+    width: 12rem;
   }
 
   #about .banner h3 {
