@@ -1,2 +1,2 @@
 # eluhcode.github.io
-My persona page
+My personal page
